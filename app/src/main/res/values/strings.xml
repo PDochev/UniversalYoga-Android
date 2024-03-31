@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">UniversalYoga</string>
+    <string name="tvTitle">Universal Yoga</string>
+    <string name="tvHomeDesc">Welcome to Universal Yoga, your personal gateway to a harmonious journey of mind, body, and spirit.</string>
+    <string name="btnCreateYogaClass">Create a class</string>
+    <string name="btnViewClasses">View Classes</string>
+    <string name="tvCreateClass">Create a Course</string>
+    <string name="tvDayOfWeek">Day of the week:</string>
+    <string name="tvTime">Time of course:</string>
+    <string name="tvCapacity">Capacity:</string>
+    <string name="tvDuration">Duration(minutes):</string>
+    <string name="tvPrice">Price per class(£):</string>
+    <string name="tvTypeOfClass">Type of class:</string>
+    <string name="tvDescription">Description: </string>
+    <string name="tvLevel">Level:</string>
+    <string name="btnHome">Home</string>
+    <string name="btnCreate">Create class</string>
+    <string name="tvDurationM">Duration:</string>
+    <string name="tvPriceP">Price per class:</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnDelete">Delete</string>
+    <string name="emptyCourse">You don\'t have any courses at the moment</string>
+    <string name="emptyClass">You don\'t have any classes at the moment</string>
+    <string name="tvUpdateClass">Update a class</string>
+    <string name="btnUpdate">Update Class</string>
+    <string name="btnClasses">Classes</string>
+    <string name="tvDate">Date:</string>
+    <string name="tvSelectDate">Click here to select the course date</string>
+    <string name="tvTeacher">Teacher:</string>
+    <string name="tvComments">Comments:</string>
+    <string name="btnCreateCourse">Save</string>
+    <string name="btnCreateYogaCourse">Create a course</string>
+    <string name="btnViewCourses">View Courses</string>
+    <string name="btnSearch">Search</string>
+    <string name="tvSearchByTeacher">Search by Teacher:</string>
+    <string name="btnAddClass">Add Class</string>
+    <string name="btnCreateCourseBtn">Create course</string>
+    <string name="btnBack">Back</string>
+    <string name="btnBackToCourses">Courses</string>
+    <string name="btnUpdateCoure">Update Course</string>
+    <string name="tvCreateAClassTitle">Create a Class</string>
+    <string name="tvUpdateClassTitle">Update a Class</string>
+    <string name="btnGoToCourses">Go to Courses</string>
+    <string name="btnPushData">Upload data</string>
+    <string name="btnUpdateButton">Update</string>
+    <string name="tvUpdateCourse">Update a Course</string>
+    <string-array name="dayOfTheWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="typeOfClass">
+        <item>Flow Yoga</item>
+        <item>Aerial Yoga</item>
+        <item>Family Yoga</item>
+    </string-array>
+    <string-array name="levelOfClass">
+        <item>No level</item>
+        <item>Level 1 - Beginner</item>
+        <item>Level 2 - Intermediate</item>
+        <item>Level 3 - Advanced</item>
+    </string-array>
+    <string-array name="teachers">
+        <item>Emily Rodriguez</item>
+        <item>Benjamin Patel</item>
+        <item>Sarah Johnson</item>
+    </string-array>
+    <string-array name="teachersSearch">
+        <item>All</item>
+        <item>Emily Rodriguez</item>
+        <item>Benjamin Patel</item>
+        <item>Sarah Johnson</item>
+    </string-array>
+</resources>

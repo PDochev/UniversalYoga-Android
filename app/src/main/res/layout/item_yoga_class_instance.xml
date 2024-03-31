@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/appBackground"
+    android:padding="20dp"
+
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/appCardBG"
+        app:cardCornerRadius="15dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvTeacher" />
+
+            <TextView
+                android:id="@+id/tvDateClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTeacher"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvDate" />
+
+            <TextView
+                android:id="@+id/tvCommentsClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvComments" />
+
+            <TextView
+                android:id="@+id/spDayOfWeekUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvTeacher"
+                android:text="TextView 9" />
+
+            <TextView
+                android:id="@+id/etTimeUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spDayOfWeekUpdated"
+                android:layout_marginStart="103dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDateClass"
+                android:text="TextView 10" />
+
+            <TextView
+                android:id="@+id/etCapacityUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTimeUpdated"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvCommentsClass"
+                android:text="TextView 11" />
+
+            <Button
+                android:id="@+id/btnHomeUpdate"
+                style="@style/Theme.UniversalYogaCoursework.ButtonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toLeftOf="@id/btnUpdateClass"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnEdit" />
+
+            <Button
+                android:id="@+id/btnUpdateClass"
+                style="@style/Theme.UniversalYogaCoursework.ButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnDelete" />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

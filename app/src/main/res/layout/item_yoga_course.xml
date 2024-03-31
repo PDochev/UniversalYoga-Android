@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+    <TextView
+        android:id="@+id/tvTeacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/tvTeacher"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTeacherNameDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTeacherNameDetails" />
+
+    <TextView
+        android:id="@+id/tvTeacherNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="29dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvDateDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDateDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvTeacherNameDetails"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCommentsDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="97dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvDateDetails"
+        app:layout_constraintTop_toTopOf="@+id/tvTeacherNameDetails" />
+
+    <TextView
+        android:id="@+id/tvDateCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/tvDate"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCommentsCourse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTeacherName" />
+
+    <TextView
+        android:id="@+id/tvCommentsCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/tvComments"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCommentsDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCommentsDetails" />
+
+    <Button
+        android:id="@+id/btnDeleteClass"
+        style="@style/Theme.UniversalYogaCoursework.ButtonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btnDelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvCommentsDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

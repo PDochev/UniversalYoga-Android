@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:background="@color/appBackground"
+    android:padding="20dp"
+
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/appCardBG"
+        app:cardCornerRadius="15dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvDayOfWeek" />
+
+            <TextView
+                android:id="@+id/tvDateClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTeacher"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvTime" />
+
+            <TextView
+                android:id="@+id/tvCommentsClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvPrice" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCommentsClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvCapacity" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDuration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvDuration" />
+
+            <TextView
+                android:id="@+id/tvTypeOfClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPrice"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvTypeOfClass" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTypeOfClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvLevel" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvDescription" />
+
+            <TextView
+                android:id="@+id/spDayOfWeekUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvTeacher"
+                android:text="TextView 9" />
+
+            <TextView
+                android:id="@+id/etTimeUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spDayOfWeekUpdated"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDateClass"
+                android:text="TextView 10" />
+
+            <TextView
+                android:id="@+id/etCapacityUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTimeUpdated"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvCommentsClass"
+                android:text="TextView 11" />
+
+            <TextView
+                android:id="@+id/etDurationUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCapacityUpdated"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvCommentsClass"
+                android:text="TextView 12" />
+
+            <TextView
+                android:id="@+id/etPriceUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDurationUpdated"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDuration"
+                android:text="TextView 13" />
+
+            <TextView
+                android:id="@+id/spTypeOfClassUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPriceUpdated"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvPrice"
+                android:text="TextView 14" />
+
+            <TextView
+                android:id="@+id/etDescriptionUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spTypeOfClassUpdated"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvTypeOfClass"
+                android:text="TextView 15" />
+
+            <TextView
+                android:id="@+id/spLevelUpdated"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/etDescriptionUpdated"
+                android:layout_marginStart="98dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDescription"
+                android:text="TextView 16" />
+
+            <Button
+                android:id="@+id/btnAddClass"
+                style="@style/Theme.UniversalYogaCoursework.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLevel"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnAddClass" />
+
+            <Button
+                android:id="@+id/viewClassesFromACourse"
+                style="@style/Theme.UniversalYogaCoursework.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAddClass"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnViewClasses" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                style="@style/Theme.UniversalYogaCoursework.ButtonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/viewClassesFromACourse"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/viewClassesFromACourse"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnEdit" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/Theme.UniversalYogaCoursework.ButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/viewClassesFromACourse"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/btnEdit"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/btnDelete" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

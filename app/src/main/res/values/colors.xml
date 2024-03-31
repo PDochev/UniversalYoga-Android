@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appBackground">#efcac1 </color>
+    <color name="appCardBG">#FFFAF4</color>
+    <color name="btnBackground">#728a94</color>
+    <color name="muted">#8B8B8B</color>
+    <color name="btnDelete">#c1121f</color>
+    <color name="btnEdit">#669bbc</color>
+</resources>
+
+<!-- appBG   eae2b7 , edf2f4-->

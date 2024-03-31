@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:padding="20dp"
+
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-8dp">
+
+
+    <TextView
+        android:id="@+id/tvCreateCourse"
+        style="@style/Theme.UniversalYogaCoursework.SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tvUpdateCourse"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/appCardBG"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateCourse">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tvDayOfWeek" />
+
+            <TextView
+                android:id="@+id/tvDateClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTeacher"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:text="@string/tvTime" />
+
+            <TextView
+                android:id="@+id/tvCommentsClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDateClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tvCapacity" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCommentsClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/tvDuration" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDuration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/tvPrice" />
+
+            <TextView
+                android:id="@+id/tvTypeOfClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPrice"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tvTypeOfClass" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTypeOfClass"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tvDescription" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDescription"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tvLevel" />
+
+            <Spinner
+                android:id="@+id/spDayOfWeekUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/dayOfTheWeek"
+                android:layout_toRightOf="@id/tvTeacher"
+                android:text="TextView 9" />
+
+            <EditText
+                android:id="@+id/etTimeUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spDayOfWeekUpdated"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDateClass"
+                android:hint="e.g. 10:00 , 11:00"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etCapacityUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTimeUpdated"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvCommentsClass"
+                android:hint="number of people"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etDurationUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCapacityUpdated"
+                android:layout_marginStart="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvCommentsClass"
+                android:hint="e.g. 60 minutes"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etPriceUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDurationUpdated"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvDuration"
+                android:hint="e.g. 10£"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spTypeOfClassUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPriceUpdated"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="27dp"
+                android:entries="@array/typeOfClass"
+                android:layout_toRightOf="@id/tvPrice"
+                android:text="TextView 14" />
+
+            <EditText
+                android:id="@+id/etDescriptionUpdated"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spTypeOfClassUpdated"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/tvTypeOfClass"
+                android:hint="Optional"
+                android:inputType="textMultiLine"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spLevelUpdated"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDescriptionUpdated"
+                android:layout_marginStart="58dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="23dp"
+                android:entries="@array/levelOfClass"
+                android:layout_toRightOf="@id/tvDescription"
+                android:text="TextView 16" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Second Button -->
+    <Button
+        android:id="@+id/btnCourses"
+        style="@style/Theme.UniversalYogaCoursework.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/btnBackToCourses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateCourse"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdateCourse"
+        style="@style/Theme.UniversalYogaCoursework.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/btnUpdateCoure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCourses" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
